@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\GMRDC1\\Folder Redirection\\Liron.Saedi\\Documents\\Visual Studio 2019\\Projects\\Pathfinding\\Pathfinding\\Pathfinding.csproj",
+      "projectUniqueName": "\\\\GMRDC1\\Folder Redirection\\Liron.Saedi\\Documents\\GitHub\\Pathfinding\\Pathfinding\\Pathfinding.csproj",
       "projectName": "Pathfinding",
-      "projectPath": "\\\\GMRDC1\\Folder Redirection\\Liron.Saedi\\Documents\\Visual Studio 2019\\Projects\\Pathfinding\\Pathfinding\\Pathfinding.csproj",
+      "projectPath": "\\\\GMRDC1\\Folder Redirection\\Liron.Saedi\\Documents\\GitHub\\Pathfinding\\Pathfinding\\Pathfinding.csproj",
       "packagesPath": "C:\\Users\\Liron.Saedi\\.nuget\\packages\\",
-      "outputPath": "\\\\GMRDC1\\Folder Redirection\\Liron.Saedi\\Documents\\Visual Studio 2019\\Projects\\Pathfinding\\Pathfinding\\obj\\",
+      "outputPath": "\\\\GMRDC1\\Folder Redirection\\Liron.Saedi\\Documents\\GitHub\\Pathfinding\\Pathfinding\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

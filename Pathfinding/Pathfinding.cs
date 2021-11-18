@@ -12,9 +12,15 @@ namespace Pathfinding
             {
                 return null;
             }
+            for (int i = 0; i < graph.Vertices.Count; i++)
+            {
+                graph.Vertices[i].Initialize();   
+            }
 
-            start.Distance = double.PositiveInfinity;
 
+            start.Distance = 0;
+
+            //initialize everything in graph
             
         }
     }

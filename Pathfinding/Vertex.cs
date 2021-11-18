@@ -14,8 +14,16 @@ namespace Pathfinding
 
         public bool visit;
 
+        public Vertex<T> founder { get; set; }
         public Vertex(T value) 
         {
+        }
+
+        public void Initialize()
+        {
+            Distance = double.PositiveInfinity;
+            visit = false;
+            founder = null;
         }
     }
 }

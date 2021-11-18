@@ -12,7 +12,9 @@ namespace Pathfinding
 
         public Edge(Vertex<T> startingPoint, Vertex<T> endingPoint, double distance)
         {
-
+            StartingPoint = startingPoint;
+            EndingPoint = endingPoint;
+            Distance = distance;
         }
     }
 }
