@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Text;
 
 namespace Pathfinding
@@ -20,8 +21,30 @@ namespace Pathfinding
 
             start.Distance = 0;
 
-            //initialize everything in graph
-            
+
+            PriorityQueue<Vertex<T>> priorityQueue = new PriorityQueue<Vertex<T>>(new VertexComparer<T>());
+            priorityQueue.Enqueue(start);
+
+            while(!priorityQueue.IsEmpty())
+            {
+
+                Vertex<T> current = priorityQueue.Dequeue();
+                foreach(var v in current.Neighbors)
+                {
+                    v.Distance = ...
+                }
+            }
+
+            var current = start;
+            current.Distance()
+        }
+
+        private class VertexComparer<T> : IComparer<Vertex<T>>
+        {
+            public int Compare([AllowNull] Vertex<T> x, [AllowNull] Vertex<T> y)
+            {
+                throw new NotImplementedException();
+            }
         }
     }
 }
