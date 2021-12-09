@@ -7,7 +7,7 @@ namespace Pathfinding
 {
     class Pathfinding
     {
-        public static IEnumerable<Vertex<T>> Dijkstra<T>(Graph<T> graph, Vertex<T> start, Vertex<T> end)
+        public static List<Vertex<T>> Dijkstra<T>(Graph<T> graph, Vertex<T> start, Vertex<T> end)
         {
             if (!(graph.Contains(start) && graph.Contains(end)))
             {
@@ -15,7 +15,7 @@ namespace Pathfinding
             }
             for (int i = 0; i < graph.Vertices.Count; i++)
             {
-                graph.Vertices[i].Initialize();   
+                graph.Vertices[i].Initialize();
             }
 
 
@@ -25,18 +25,41 @@ namespace Pathfinding
             PriorityQueue<Vertex<T>> priorityQueue = new PriorityQueue<Vertex<T>>(new VertexComparer<T>());
             priorityQueue.Enqueue(start);
 
-            while(!priorityQueue.IsEmpty())
+            while (!priorityQueue.IsEmpty() && !end.Visit)
             {
 
                 Vertex<T> current = priorityQueue.Dequeue();
-                foreach(var v in current.Neighbors)
+                current.Visit = true;
+                foreach (var edge in current.Neighbors)
                 {
-                    v.Distance = ...
+                    var neighbor = edge.EndingPoint;
+                    double tentative = edge.Distance + current.Distance;
+
+                    if (tentative < neighbor.Distance)
+                    {
+                        neighbor.Distance = tentative;
+                        neighbor.Founder = current;
+                        current.Visit = false;
+                    }
+
+                    if (!priorityQueue.Contains(neighbor) && !neighbor.Visit == true)
+
+                    {
+                        priorityQueue.Enqueue(neighbor);
+                    }
                 }
             }
+            List<Vertex<T>> list = new List<Vertex<T>>();
+            Vertex<T> temp = end;
+            while (temp != start)
+            {
+                list.Add(temp.Founder);
+                temp = temp.Founder;
+            }
+            return list;
 
-            var current = start;
-            current.Distance()
+           //// var current = start;
+           // current.Distance();
         }
 
         private class VertexComparer<T> : IComparer<Vertex<T>>

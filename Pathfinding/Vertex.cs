@@ -12,9 +12,9 @@ namespace Pathfinding
         public int NeighborCount => Neighbors.Count;
         public double Distance { get; set; }
 
-        public bool visit;
+        public bool Visit;
 
-        public Vertex<T> founder { get; set; }
+        public Vertex<T> Founder { get; set; }
         public Vertex(T value) 
         {
         }
@@ -22,8 +22,8 @@ namespace Pathfinding
         public void Initialize()
         {
             Distance = double.PositiveInfinity;
-            visit = false;
-            founder = null;
+            Visit = false;
+            Founder = null;
         }
     }
 }
