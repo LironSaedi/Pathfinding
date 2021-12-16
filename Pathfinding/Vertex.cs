@@ -11,12 +11,14 @@ namespace Pathfinding
 
         public int NeighborCount => Neighbors.Count;
         public double Distance { get; set; }
-
+        
         public bool Visit;
 
         public Vertex<T> Founder { get; set; }
         public Vertex(T value) 
         {
+            this.Value = value;
+            this.Neighbors = new List<Edge<T>>();
         }
 
         public void Initialize()

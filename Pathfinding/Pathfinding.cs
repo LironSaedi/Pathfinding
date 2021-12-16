@@ -51,12 +51,12 @@ namespace Pathfinding
             }
             List<Vertex<T>> list = new List<Vertex<T>>();
             Vertex<T> temp = end;
-            while (temp != start)
+            while (temp != null)
             {
-                list.Add(temp.Founder);
+                list.Add(temp);
                 temp = temp.Founder;
             }
-            return list;
+            return list; //The list is in the wrong order, maybe use a different datastructure instead of list so the values come back reversed
 
            //// var current = start;
            // current.Distance();
@@ -66,7 +66,16 @@ namespace Pathfinding
         {
             public int Compare([AllowNull] Vertex<T> x, [AllowNull] Vertex<T> y)
             {
-                throw new NotImplementedException();
+                if(x.Distance < y.Distance)
+                {
+                    return -1;
+                }
+                if(x.Distance > y.Distance)
+                {
+                    return 1;
+                }
+
+                return 0;
             }
         }
     }

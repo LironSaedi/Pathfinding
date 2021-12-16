@@ -1,0 +1,13 @@
+\\GMRDC1\Folder Redirection\Liron.Saedi\Documents\GitHub\Pathfinding\Pathfinding\obj\Debug\netcoreapp3.1\Pathfinding.csprojAssemblyReference.cache
+\\GMRDC1\Folder Redirection\Liron.Saedi\Documents\GitHub\Pathfinding\Pathfinding\obj\Debug\netcoreapp3.1\Pathfinding.AssemblyInfoInputs.cache
+\\GMRDC1\Folder Redirection\Liron.Saedi\Documents\GitHub\Pathfinding\Pathfinding\obj\Debug\netcoreapp3.1\Pathfinding.AssemblyInfo.cs
+\\GMRDC1\Folder Redirection\Liron.Saedi\Documents\GitHub\Pathfinding\Pathfinding\obj\Debug\netcoreapp3.1\Pathfinding.csproj.CoreCompileInputs.cache
+\\GMRDC1\Folder Redirection\Liron.Saedi\Documents\GitHub\Pathfinding\Pathfinding\bin\Debug\netcoreapp3.1\Pathfinding.exe
+\\GMRDC1\Folder Redirection\Liron.Saedi\Documents\GitHub\Pathfinding\Pathfinding\bin\Debug\netcoreapp3.1\Pathfinding.deps.json
+\\GMRDC1\Folder Redirection\Liron.Saedi\Documents\GitHub\Pathfinding\Pathfinding\bin\Debug\netcoreapp3.1\Pathfinding.runtimeconfig.json
+\\GMRDC1\Folder Redirection\Liron.Saedi\Documents\GitHub\Pathfinding\Pathfinding\bin\Debug\netcoreapp3.1\Pathfinding.runtimeconfig.dev.json
+\\GMRDC1\Folder Redirection\Liron.Saedi\Documents\GitHub\Pathfinding\Pathfinding\bin\Debug\netcoreapp3.1\Pathfinding.dll
+\\GMRDC1\Folder Redirection\Liron.Saedi\Documents\GitHub\Pathfinding\Pathfinding\bin\Debug\netcoreapp3.1\Pathfinding.pdb
+\\GMRDC1\Folder Redirection\Liron.Saedi\Documents\GitHub\Pathfinding\Pathfinding\obj\Debug\netcoreapp3.1\Pathfinding.dll
+\\GMRDC1\Folder Redirection\Liron.Saedi\Documents\GitHub\Pathfinding\Pathfinding\obj\Debug\netcoreapp3.1\Pathfinding.pdb
+\\GMRDC1\Folder Redirection\Liron.Saedi\Documents\GitHub\Pathfinding\Pathfinding\obj\Debug\netcoreapp3.1\Pathfinding.genruntimeconfig.cache
