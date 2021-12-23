@@ -11,6 +11,8 @@ namespace Pathfinding
 
         public int NeighborCount => Neighbors.Count;
         public double Distance { get; set; }
+
+        public double FinalDistance { get; set; }
         
         public bool Visit;
 
@@ -24,6 +26,13 @@ namespace Pathfinding
         public void Initialize()
         {
             Distance = double.PositiveInfinity;
+            Visit = false;
+            Founder = null;
+        }
+        public void Initialize2()
+        {
+            Distance = double.PositiveInfinity;
+            FinalDistance = double.PositiveInfinity;
             Visit = false;
             Founder = null;
         }
